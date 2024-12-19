@@ -12,5 +12,3 @@ def download_blob(connection_string, container_name, blob_name, download_path):
         blob_client = container_client.get_blob_client(blob_name)
         file.write(blob_client.download_blob().readall())
 
-# Example usage
-# download_blob("your_connection_string", "container_name", "file_name.csv", "data/sample.csv")
